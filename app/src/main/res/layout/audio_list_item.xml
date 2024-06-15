@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="horizontal"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="5dp">
+
+	<ImageView
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:id="@+id/album_image"
+		android:layout_marginRight="10dp"
+		android:layout_marginLeft="5dp"/>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_margin="3dp">
+
+		<com.levkopo.apps.nashi.widget.DefaultTextView
+			android:id="@+id/title"
+			android:layout_marginBottom="5dp"
+			android:singleLine="true"
+			style="@style/Text.Primary"
+			android:layout_width="match_parent"/>
+
+		<com.levkopo.apps.nashi.widget.DefaultTextView
+			android:id="@+id/artist"
+			android:singleLine="true"
+			style="@style/Text.Secondary.Small"
+			android:layout_width="match_parent"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

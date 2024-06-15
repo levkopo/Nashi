@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:layout_marginTop="5dp"
+			android:layout_marginLeft="15dp">
+
+			<com.levkopo.apps.nashi.widget.DefaultTextView
+				android:id="@+id/text"
+				style="@style/Text.Secondary"/>
+
+			<com.levkopo.apps.nashi.widget.DefaultTextView
+				style="@style/Text.Secondary.Large"
+				android:text="0/0$"
+				android:id="@+id/goal"/>
+
+		</LinearLayout>
+
+		<com.levkopo.apps.nashi.widget.CircularProgressBar
+			app:color="@color/green"
+			android:id="@+id/process"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_margin="5dp"/>
+
+	</LinearLayout>
+
+	<Button
+		style="@style/Widget.MaterialComponents.Button.TextButton"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="@string/donate"
+		android:id="@+id/donate_btn"/>
+
+</LinearLayout>
+

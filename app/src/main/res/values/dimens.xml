@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="panel_elevation">12dp</dimen>
+    <dimen name="corners_radius">12dp</dimen>
+	<dimen name="reveal_height">0dp</dimen>
+	<dimen name="card_elevation">16dp</dimen>
+	<dimen name="user_header_height">100dp</dimen>
+	<dimen name="audio_album_image_round">8dp</dimen>
+	<dimen name="card_radius">@dimen/corners_radius</dimen>
+	<dimen name="bottom_nav_height">48dp</dimen>
+	<dimen name="album_photo_size">300dp</dimen>
+	<dimen name="top_skip_button_height">20dp</dimen>
+	<dimen name="control_button_size">50dp</dimen>
+	<dimen name="control_button_margin">10dp</dimen>
+	<dimen name="panel_drag_width">50dp</dimen>
+	<dimen name="divider_margin">16dp</dimen>
+	<dimen name="toolbar_height">56dp</dimen>
+	<dimen name="toolbar_title_size">23dp</dimen>
+	<dimen name="image_round">6dp</dimen>
+	
+	<!--Group Widgets dimens-->
+	<dimen name="widget_image_round">6dp</dimen>
+	<dimen name="widget_cover_height">150dp</dimen>
+	
+	<!--Text style dimens-->
+	<dimen name="style_text_large">18sp</dimen>
+	<dimen name="style_text_medium">16sp</dimen>
+	<dimen name="style_text_small">14sp</dimen>
+		
+	<!--Avatar style dimens-->
+	<dimen name="style_avatar_large">80dp</dimen>
+	<dimen name="style_avatar_medium">65dp</dimen>
+	<dimen name="style_avatar_small">50dp</dimen>
+	<dimen name="style_avatar_micro">32dp</dimen>
+	
+	<!--Audio Mini Controller dimens-->
+	<dimen name="amc_icon_size">32dp</dimen>
+	<dimen name="amc_icon_padding">15dp</dimen>
+	
+	<!--AttachmentsView dimens-->
+	<dimen name="attachment_photo_height">150dp</dimen>
+</resources>

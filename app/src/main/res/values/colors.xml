@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--Theme colors-->
+	<color name="primary">#1564bf</color>
+	<color name="primary_light">#5e91f2</color>
+	<color name="primary_dark">#003b8e</color>
+		
+  	<color name="colorAccent">#663399</color>
+	<color name="colorCardBG_light">#ffffffff</color>
+	<color name="colorCardBG_dark">#FF181818</color>
+	<color name="dark_background">#ff151515</color>
+	<color name="light_background">#fff0f0f0</color>
+	
+	<!--Message colors-->
+	<color name="light_in_message_bg">#e9e9e9</color>
+	<color name="light_out_message_bg">@color/colorPrimary</color>
+	<color name="light_in_message_text_color">@color/colorPrimary</color>
+	<color name="light_out_message_text_color">@color/white</color>
+	<color name="dark_in_message_bg">#303030</color>
+	<color name="dark_out_message_bg">#4c2671</color>
+	<color name="dark_in_message_text_color">@color/white</color>
+	<color name="dark_out_message_text_color">@color/white</color>
+	
+	<!--Post colors-->
+	<color name="like_active">#ef5350</color>
+			
+	<!--Def colors-->
+	<color name="white">#ffffffff</color>
+	<color name="white_alpha12">#1FFFFFFF</color>
+	<color name="black">#ff000000</color>
+	<color name="black_alpha12">#1F000000</color>
+	<color name="gray">#FF2A2A2A</color>
+	<color name="light_gray">#FFA5A5A5</color>
+	<color name="green">#66BB6A</color>
+</resources>

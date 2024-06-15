@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="10dp"
+		android:background="?attr/background"
+		android:elevation="@dimen/card_elevation"
+		app:cardCornerRadius="@dimen/corners_radius"
+		app:cardBackgroundColor="?attr/background"
+		style="@style/Widget.MaterialComponents.CardView">
+
+		<RelativeLayout
+			android:layout_marginBottom="@dimen/corners_radius"
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:orientation="horizontal">
+
+			<ImageView
+				android:tint="?attr/textColor"
+				android:id="@+id/send"
+				android:layout_height="40dp"
+				android:layout_width="40dp"
+				android:src="@drawable/ic_round_send_black_24"
+				android:layout_gravity="right|center_vertical|end"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:layout_marginRight="10dp"
+				android:background="@drawable/primary_btn"
+				android:padding="8dp"/>
+
+			<EditText
+				android:layout_toLeftOf="@id/send"
+				android:inputType="textMultiLine"
+				android:layout_width="match_parent"
+				android:ems="10"
+				android:layout_height="wrap_content"
+				android:layout_margin="6dp"
+				android:layout_marginLeft="15dp"
+				android:textColorHint="?attr/colorPrimary"
+				android:hint="@string/message"
+				android:padding="8dp"
+				android:id="@+id/message"/>
+
+		</RelativeLayout>
+
+	</com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
+

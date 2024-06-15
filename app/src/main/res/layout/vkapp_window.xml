@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:background="?attr/background"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<FrameLayout
+			android:id="@+id/top_space"
+			android:layout_width="match_parent"
+			android:layout_height="25dp"
+			android:layout_gravity="top"/>
+		
+		<WebView
+			android:id="@+id/vkapp_webview"
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"/>
+
+	</LinearLayout>
+
+	<com.github.ybq.android.spinkit.SpinKitView
+		android:id="@+id/progress_spin"
+		style="@style/SpinKitView.Large.ThreeBounce"
+		android:indeterminate="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		app:SpinKit_Color="?attr/colorPrimary"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="top|right">
+
+		<ImageButton
+			android:layout_width="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:src="@android:drawable/ic_menu_close_clear_cancel"
+			android:background="#00000000"
+			android:id="@+id/close"/>
+
+	</LinearLayout>
+
+</FrameLayout>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:background="?attr/background"
+	android:layout_height="match_parent">
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/top_skip_button_height"
+		android:id="@+id/skip">
+
+		<ImageView
+			android:tint="?attr/colorPrimary"
+			android:src="@drawable/ic_round_arrow_drop_up_black_18"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"/>
+
+	</FrameLayout>
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_below="@id/skip">
+
+		<ImageView
+			android:layout_width="@dimen/album_photo_size"
+			android:layout_height="@dimen/album_photo_size"
+			android:layout_gravity="center_horizontal"
+			android:id="@+id/image"/>
+
+		<com.levkopo.apps.nashi.widget.DefaultTextView
+			android:layout_margin="20dp"
+			android:layout_gravity="center_horizontal"
+			android:layout_marginBottom="5dp"
+			android:id="@+id/title"
+			android:gravity="center"
+			style="@style/Text.Secondary.Large"/>
+
+		<com.levkopo.apps.nashi.widget.DefaultTextView
+			android:layout_gravity="center_horizontal"
+			android:layout_marginBottom="10dp"
+			android:id="@+id/artist"
+			android:gravity="center"
+			style="@style/Text.Primary"/>
+
+		<SeekBar
+			android:id="@+id/audio_seek"
+			android:layout_width="@dimen/album_photo_size"
+			android:layout_height="wrap_content"
+			android:max="100"
+			android:progress="0"
+			android:layout_gravity="center_horizontal"/>
+
+		<FrameLayout
+			android:layout_width="@dimen/album_photo_size"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal">
+
+			<com.levkopo.apps.nashi.widget.DefaultTextView
+				style="@style/Text.Secondary.Small"
+				android:text="00:00:00"
+				android:id="@+id/currentPosition"/>
+
+			<com.levkopo.apps.nashi.widget.DefaultTextView
+				style="@style/Text.Secondary.Small"
+				android:text="00:00:00"
+				android:id="@+id/duration"
+				android:layout_gravity="right"/>
+
+		</FrameLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:layout_gravity="center_horizontal">
+
+			<ImageView
+				android:tint="?attr/colorPrimary"
+				android:src="@drawable/ic_round_skip_previous_black_48"
+				android:layout_width="@dimen/control_button_size"
+				android:layout_height="@dimen/control_button_size"
+				android:layout_margin="@dimen/control_button_margin"
+				android:id="@+id/previous"/>
+
+			<ImageView
+				android:tint="?attr/colorPrimary"
+				android:src="@drawable/ic_round_pause_black_48"
+				android:layout_width="@dimen/control_button_size"
+				android:layout_height="@dimen/control_button_size"
+				android:layout_margin="@dimen/control_button_margin"
+				android:id="@+id/middle_button"/>
+
+			<ImageView
+				android:tint="?attr/colorPrimary"
+				android:src="@drawable/ic_round_skip_next_black_48"
+				android:layout_width="@dimen/control_button_size"
+				android:layout_height="@dimen/control_button_size"
+				android:layout_margin="@dimen/control_button_margin"
+				android:id="@+id/next"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</RelativeLayout>
+

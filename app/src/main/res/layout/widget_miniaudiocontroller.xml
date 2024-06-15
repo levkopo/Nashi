@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.levkopo.apps.nashi.widget.CardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="5dp"
+	android:paddingBottom="5dp">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<ProgressBar
+			android:layout_width="match_parent"
+			style="?android:attr/progressBarStyleHorizontal"
+			android:layout_height="5dp"
+			android:padding="0dp"
+			android:id="@+id/audioseek"
+			android:layout_marginTop="0dp"/>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<ImageView
+				android:src="@drawable/ic_round_pause_black_48"
+				style="@style/AMC_Icon"
+				android:layout_gravity="left|center_vertical"
+				android:id="@+id/stop_pause"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_vertical|center_horizontal">
+
+				<com.levkopo.apps.nashi.widget.DefaultTextView
+					style="@style/Text.Primary.Small"
+					android:id="@+id/name"/>
+
+			</LinearLayout>
+
+			<ImageView
+				android:src="@android:drawable/ic_delete"
+				android:layout_gravity="right|center_vertical"
+				style="@style/AMC_Icon"
+				android:id="@+id/close"/>
+
+		</FrameLayout>
+
+	</LinearLayout>
+
+</com.levkopo.apps.nashi.widget.CardView>
+

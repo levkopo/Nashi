@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="20dp"
+		android:layout_margin="10dp"
+		android:padding="5dp">
+
+		<ImageView
+			android:tint="?attr/colorPrimary"
+			android:src="@drawable/ic_outline_reply_black_36"
+			android:layout_width="30dp"
+			android:layout_height="30dp"/>
+
+		<com.levkopo.apps.nashi.widget.Avatar
+			style="@style/Avatar.Micro"
+			android:id="@+id/avatar"
+			android:layout_marginLeft="5dp"/>
+
+		<com.levkopo.apps.nashi.widget.DefaultTextView
+			style="@style/Text.Primary"
+			android:layout_gravity="center_vertical"
+			android:id="@+id/name"
+			android:layout_marginLeft="10dp"/>
+
+	</LinearLayout>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="40dp"
+		android:layout_margin="10dp"
+		android:layout_marginTop="0dp">
+
+		<com.levkopo.apps.nashi.widget.DefaultTextView
+			style="@style/Text.Secondary.Small"
+			android:maxLines="4"
+			android:id="@+id/text"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

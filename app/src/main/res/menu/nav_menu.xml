@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+		android:id="@+id/newsfeed"
+		android:icon="@drawable/ic_round_rss_feed_black_48"/>
+	
+	<item
+		android:id="@+id/dialogs"
+		android:icon="@drawable/ic_outline_mail_black_36"/>
+	
+	<item
+		android:id="@+id/notifications"
+		android:icon="@drawable/ic_outline_notifications_none_black_36"/>
+	
+	<item
+		android:id="@+id/menu"
+		android:icon="@drawable/ic_outline_menu_black_36"/>
+	
+</menu>

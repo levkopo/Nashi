@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:padding="10dp">
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/demo"
+		android:layout_width="125dp"
+		android:layout_height="225dp"
+		android:background="?attr/background"
+		style="@style/Widget.MaterialComponents.CardView"
+		app:cardCornerRadius="@dimen/corners_radius"
+		app:cardBackgroundColor="?attr/background"
+		android:elevation="@dimen/card_elevation"
+		android:layout_gravity="center_horizontal">
+		
+		<com.google.android.material.card.MaterialCardView
+			android:id="@+id/background"
+			android:layout_marginTop="25dp"
+			android:layout_width="125dp"
+			android:layout_height="match_parent"
+			android:background="@color/white"
+			style="@style/Widget.MaterialComponents.CardView"
+			app:cardCornerRadius="@dimen/corners_radius"
+			app:cardBackgroundColor="?attr/background"
+			android:elevation="@dimen/card_elevation"/>
+			
+
+	</com.google.android.material.card.MaterialCardView>
+
+	<com.levkopo.apps.nashi.widget.DefaultTextView
+		style="@style/Text.Primary"
+		android:layout_margin="10dp"
+		android:layout_gravity="center_horizontal"
+		android:id="@+id/name"/>
+
+</LinearLayout>
+

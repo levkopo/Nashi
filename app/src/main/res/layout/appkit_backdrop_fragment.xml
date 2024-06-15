@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:id="@+id/bd_content"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	style="@style/Widget.App.Backdrop">
+	
+	<FrameLayout
+		android:id="@+id/top_space"
+		android:layout_width="match_parent"
+		android:layout_height="25dp"
+		android:layout_gravity="top"/>
+	
+	<LinearLayout
+		android:id="@+id/backdrop"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:paddingTop="88dp">
+
+	</LinearLayout>
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:elevation="0dp"
+		style="@style/Widget.App.Backdrop.Toolbar">
+		
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:paddingStart="12dp"
+			android:paddingLeft="12dp"
+			android:paddingEnd="12dp"
+			android:paddingRight="12dp"
+			app:contentInsetStart="0dp"
+			app:titleTextColor="@color/white"
+			app:title="@string/newsfeed"
+			style="@style/Widget.App.Backdrop.Toolbar"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	
+	<com.google.android.material.card.MaterialCardView
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="56dp"
+		android:layout_marginBottom="-16dp"
+		android:padding="10dp"
+		android:background="?attr/background"
+		style="@style/Widget.MaterialComponents.CardView"
+		app:cardCornerRadius="@dimen/corners_radius"
+		app:cardBackgroundColor="?attr/background"
+		android:elevation="@dimen/card_elevation">
+		
+		<com.github.ybq.android.spinkit.SpinKitView
+			xmlns:app="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/progress_spin"
+			style="@style/SpinKitView.Large.ThreeBounce"
+			android:indeterminate="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			app:SpinKit_Color="?attr/colorPrimary" />
+		
+		<FrameLayout
+			android:id="@+id/content_full"
+			android:layout_marginBottom="@dimen/corners_radius"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+		</FrameLayout>
+
+	</com.google.android.material.card.MaterialCardView>
+	
+</FrameLayout>
+

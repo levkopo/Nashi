@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+		android:id="@+id/friends"
+		android:title="@string/friends"
+		android:icon="@drawable/ic_round_supervised_user_circle_black_48"/>
+
+	<item
+		android:id="@+id/groups"
+		android:title="@string/groups"
+		android:icon="@drawable/ic_round_supervised_user_circle_black_48"/>
+	
+	<item
+		android:id="@+id/audios"
+		android:title="@string/audios"
+		android:icon="@drawable/ic_outline_queue_music_black_48"/>
+</menu>

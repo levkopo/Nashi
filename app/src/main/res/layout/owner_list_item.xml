@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="100dp"
+	android:layout_height="100dp"
+	android:padding="5dp"
+	android:minHeight="60dp">
+
+	<ImageView
+		style="@style/Avatar.Small"
+		android:layout_gravity="top|center_horizontal"
+		android:id="@+id/image"/>
+
+	<com.levkopo.apps.nashi.widget.DefaultTextView
+		style="@style/Text.Primary"
+		android:layout_gravity="bottom|center_horizontal"
+		android:gravity="center"
+		android:singleLine="true"
+		android:id="@+id/title"
+		android:maxWidth="90dp"/>
+
+</FrameLayout>
+

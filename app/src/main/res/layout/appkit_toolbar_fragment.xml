@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/bd_content"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	android:background="?attr/background"
+	android:orientation="vertical">
+
+	<FrameLayout
+		android:id="@+id/top_space"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_gravity="top"/>
+
+	<com.google.android.material.appbar.AppBarLayout
+		app:elevation="0dp"
+		android:layout_width="match_parent"
+		style="@style/Widget.App.Toolbar"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/toolbar_height"
+			android:paddingStart="12dp"
+			android:paddingLeft="12dp"
+			android:paddingEnd="12dp"
+			android:paddingRight="12dp"
+			app:contentInsetStart="0dp"
+			app:titleTextColor="?attr/toolbarTitleColor"
+			style="@style/Widget.App.Toolbar"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<View
+		android:id="@+id/toolbar_spectator"
+		android:layout_height="0.5dp"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="@dimen/divider_margin"
+		android:layout_marginRight="@dimen/divider_margin"
+		android:background="?attr/divider_color"
+		android:layout_gravity="center_horizontal"/>
+
+	<FrameLayout
+		android:id="@+id/content"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginBottom="@dimen/bottom_nav_height">
+
+		<com.github.ybq.android.spinkit.SpinKitView
+			android:id="@+id/progress_spin"
+			style="@style/SpinKitView.Large.ThreeBounce"
+			android:indeterminate="false"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			app:SpinKit_Color="?attr/colorPrimary"/>
+
+		<LinearLayout
+			android:id="@+id/content_full"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		</LinearLayout>
+
+	</FrameLayout>
+
+</LinearLayout>
+

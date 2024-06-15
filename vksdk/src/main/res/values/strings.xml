@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="lib_name">vksdk</string>
+    <string name="hello_world">Hello, World!</string>
+
+</resources>

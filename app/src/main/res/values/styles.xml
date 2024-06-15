@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Темы приложения -->
+	
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
+		<item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="background">@color/light_background</item>
+		<item name="textColor">@color/gray</item>
+		<item name="colorAccent">@color/primary_light</item>
+		<item name="colorPrimary">@color/primary</item>
+		<item name="colorPrimaryDark">@color/primary_dark</item>
+		<item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+		<item name="cardBackground">@color/colorCardBG_light</item>
+		<item name="in_message_bg">@color/primary_dark</item>
+		<item name="out_message_bg">@color/primary_light</item>
+		<item name="in_message_bg_textColor">@color/white</item>
+		<item name="out_message_bg_textColor">@color/white</item>
+		<item name="gray">@color/light_gray</item>
+		<item name="toolbarTitleColor">@color/primary</item>
+		<item name="divider_color">@color/black_alpha12</item>
+	</style>
+		
+	<style name="AppTheme.Dark" parent="Theme.MaterialComponents.Light">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowActionBar">false</item>
+		<item name="windowActionBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+		<item name="background">@color/dark_background</item>
+		<item name="textColor">@color/light_gray</item>
+		<item name="colorAccent">@color/primary</item>
+		<item name="colorPrimary">@color/primary_light</item>
+		<item name="android:windowAnimationStyle">@style/WindowAnimationTransition</item>
+		<item name="cardBackground">@color/colorCardBG_dark</item>
+		<item name="in_message_bg">@color/primary</item>
+		<item name="out_message_bg">@color/primary_dark</item>
+		<item name="in_message_bg_textColor">@color/dark_in_message_text_color</item>
+		<item name="out_message_bg_textColor">@color/dark_out_message_text_color</item>
+		<item name="gray">@color/gray</item>
+		<item name="toolbarTitleColor">@color/primary_light</item>
+		<item name="divider_color">@color/white_alpha12</item>
+	</style>
+	
+	<style name="AppTheme.Splash" parent="Theme.MaterialComponents.DayNight">
+		<item name="android:windowBackground">@drawable/splash_drawable</item>
+	</style>
+	
+	<!-- Темы toolbar'а -->
+	<style name="Widget.App.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">?attr/background</item>
+        <item name="android:theme">@style/AppTheme</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/TextAppearance.App.Toolbar</item>
+		<item name="colorControlNormal">?attr/colorPrimary</item>
+		<item name="android:textColor">?attr/toolbarTitleColor</item>
+    </style>
+	
+	<style name="Widget.App.Backdrop.Toolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:theme">@style/AppTheme</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="titleTextAppearance">@style/TextAppearance.App.Toolbar</item>
+		<item name="colorControlNormal">@color/white</item>
+		<item name="toolbarNavigationButtonStyle">@style/Widget.App.Backdrop.Toolbar.Button.Navigation.Tinted</item>
+   	</style>
+	
+	<style name="Widget.App.Backdrop.Toolbar.Button.Navigation.Tinted" parent="Widget.AppCompat.Toolbar.Button.Navigation">
+		<item name="tint">@color/white</item>
+	</style>
+	
+	<style name="Widget.App.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.App.Toolbar" parent="">
+        <item name="android:textStyle">bold</item>
+		<item name="android:textAllCaps">false</item>
+		<item name="android:fontFamily">@font/tt_nunito_semi_bold</item>
+		<item name="android:textSize">@dimen/toolbar_title_size</item>
+		<item name="android:textColor">?attr/toolbarTitleColor</item>
+	</style>
+
+    <style name="Widget.App.Backdrop" parent="">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+	<!-- This will set the fade in animation on all your activities by default -->
+	<style name="WindowAnimationTransition">
+		<item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+		<item name="android:windowExitAnimation">@android:anim/fade_out</item>
+	</style>
+	
+	<!-- Text Styles -->
+	<style name="Text">
+		<item name="android:fontFamily">@font/tt_nunito_semi_bold</item>
+		<item name="android:textAppearance">@style/TextAppearance.MaterialComponents.Headline4</item>
+		<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/style_text_medium</item>
+	</style>
+	
+	<!--Primary style-->
+	<style name="Text.Primary">
+		<item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+	<style name="Text.Primary.Large">
+		<item name="android:textSize">@dimen/style_text_large</item>
+	</style>
+	<style name="Text.Primary.Small">
+		<item name="android:textSize">@dimen/style_text_small</item>
+	</style>
+	
+	<!--Secondary style -->
+	<style name="Text.Secondary">
+        <item name="android:textColor">?attr/textColor</item>
+    </style>
+	<style name="Text.Secondary.Large">
+		<item name="android:textSize">@dimen/style_text_large</item>
+	</style>
+	<style name="Text.Secondary.Small">
+		<item name="android:textSize">@dimen/style_text_small</item>
+	</style>
+	
+	
+	
+	<!-- Avatar style-->
+	<style name="Avatar">
+		<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+	</style>
+	
+	<style name="Avatar.Large">
+		<item name="android:layout_width">@dimen/style_avatar_large</item>
+        <item name="android:layout_height">@dimen/style_avatar_large</item>
+	</style>
+	
+	<style name="Avatar.Medium">
+		<item name="android:layout_width">@dimen/style_avatar_medium</item>
+        <item name="android:layout_height">@dimen/style_avatar_medium</item>
+	</style>
+	
+	<style name="Avatar.Small">
+		<item name="android:layout_width">@dimen/style_avatar_small</item>
+        <item name="android:layout_height">@dimen/style_avatar_small</item>
+	</style>
+	
+	<style name="Avatar.Micro">
+		<item name="android:layout_width">@dimen/style_avatar_micro</item>
+        <item name="android:layout_height">@dimen/style_avatar_micro</item>
+	</style>
+	
+	<!--cardview styles-->
+	<style name="Card">
+		<item name="cardBackground">?attr/cardBackground</item>
+	</style>
+	
+	<style name="Card.Outlite">
+		<item name="strokeColor">?attr/gray</item>
+		<item name="strokeWidth">1dp</item>
+	</style>
+	
+	<!--AMC Style-->
+	<style name="AMC_Icon">
+		<item name="android:tint">?attr/colorPrimary</item>
+		<item name="android:layout_marginRight">@dimen/amc_icon_padding</item>
+		<item name="android:layout_marginLeft">@dimen/amc_icon_padding</item>
+		<item name="android:layout_width">@dimen/amc_icon_size</item>
+        <item name="android:layout_height">@dimen/amc_icon_size</item>
+	</style>
+	
+	<style name="AppBottomSheetDialogTheme"
+		parent="Theme.Design.Light.BottomSheetDialog">
+		<item name="bottomSheetStyle">@style/AppModalStyle</item>
+	</style>
+
+	<style name="AppModalStyle"
+		parent="Widget.Design.BottomSheet.Modal">
+		<item name="android:background">?attr/background</item>
+	</style>
+	
+</resources>

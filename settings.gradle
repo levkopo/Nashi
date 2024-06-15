@@ -1,0 +1,4 @@
+include ':app'
+include ':requestLib'
+include ':ui_library'
+include ':vksdk'

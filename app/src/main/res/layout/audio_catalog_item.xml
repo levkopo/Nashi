@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<com.levkopo.apps.nashi.widget.DefaultTextView
+		android:layout_margin="10dp"
+		android:id="@+id/title"
+		android:singleLine="true"
+		style="@style/Text.Primary.Large"/>
+
+	<androidx.recyclerview.widget.RecyclerView
+		android:id="@+id/list"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_margin="15dp"
+		android:layout_marginTop="0dp"/>
+
+</LinearLayout>
+

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:clipChildren="false"
+	android:clipToPadding="false"
+	style="@style/Widget.App.Backdrop">
+
+	<com.google.android.material.appbar.AppBarLayout
+		app:elevation="0dp"
+		android:layout_width="match_parent"
+		style="@style/Widget.App.Backdrop.Toolbar"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar"
+			android:layout_gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:paddingStart="12dp"
+			android:paddingLeft="12dp"
+			android:paddingEnd="12dp"
+			android:paddingRight="12dp"
+			app:contentInsetStart="0dp"
+			app:titleTextColor="@color/white"
+			style="@style/Widget.App.Backdrop.Toolbar"/>
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<com.google.android.material.card.MaterialCardView
+		android:id="@+id/content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="56dp"
+		android:padding="10dp"
+		android:layout_marginBottom="-12dp"
+		android:background="?attr/background"
+		app:cardCornerRadius="@dimen/corners_radius"
+		app:cardBackgroundColor="?attr/background"
+		android:elevation="8dp">
+
+		<androidx.core.widget.NestedScrollView
+			android:id="@+id/content_full"
+			android:layout_marginBottom="12dp"
+			app:layout_behavior="@string/appbar_scrolling_view_behavior"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+				
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:paddingTop="40dp"
+					android:paddingLeft="24dp"
+					android:paddingRight="24dp">
+
+					<com.google.android.material.textfield.TextInputLayout
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="8dp"
+						android:layout_marginBottom="8dp"
+						style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+						<com.google.android.material.textfield.TextInputEditText
+							android:id="@+id/code"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:hint="@string/code"/>
+
+					</com.google.android.material.textfield.TextInputLayout>
+
+					<androidx.appcompat.widget.AppCompatButton
+						android:id="@+id/confirm"
+						android:textColor="?attr/background"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="24dp"
+						android:layout_marginBottom="24dp"
+						android:padding="12dp"
+						android:text="@string/login"
+						android:background="@drawable/primary_btn"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</androidx.core.widget.NestedScrollView>
+
+	</com.google.android.material.card.MaterialCardView>
+
+</FrameLayout>

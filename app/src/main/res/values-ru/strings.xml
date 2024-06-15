@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="username">Логин, номер телефона и т.д.</string>
+	<string name="password">Пароль</string>
+	<string name="login">Войти</string>
+	<string name="newsfeed">Новости</string>
+	<string name="recommendations">Интересное</string>
+	<string name="friends">Друзья</string>
+	<string name="online">Онлайн</string>
+	<string name="dialogs">Сообщения</string>
+	<string name="dark_theme">Темная тема</string>
+	<string name="switch_theme">Сменить тему</string>
+	<string name="post_on_wall">Запись на стене</string>
+	<string name="error_label">Ошибка</string>
+	<string name="retry">Повторить попытку</string>
+	<string name="message">Сообщение</string>
+	<string name="themes_store">Магазин тем</string>
+	<string name="audios">Музыка</string>
+	<string name="my_audios">Мои аудиозаписи</string>
+	<string name="auth_code_hint">Введите код</string>
+	<string name="code">Код</string>
+	<string name="all_posts">Все записи</string>
+	<string name="groups">Сообщества</string>
+	<string name="group">Сообщество</string>
+	<string name="all_groups">Все сообщества</string>
+	<string name="next">Далее</string>
+	<string name="friends_count">%d друзей</string>
+	<string name="followers_count">%d подписчиков</string>
+	<string name="closed_account">Закрытый аккаунт</string>
+	<string name="one_member">%d участник</string>
+	<string name="member_count">%d участника</string>
+	<string name="members_count">%d участников</string>
+	<string name="news_collections">Новостные подборки</string>
+	<string name="settings">Настройки</string>
+	<string name="write">Написать</string>
+	<string name="donate">Пожертвовать</string>
+	<string name="videos">Видеозаписи</string>
+	<string name="all">Все</string>
+	<string name="more">Подробнее</string>
+	<string name="leave_chat">Покинуть чат</string>
+	<string name="join_chat">Присоединиться к чату</string>
+	<string name="managed">Управляемые</string>
+	<string name="notifications">Уведомления</string>
+</resources>

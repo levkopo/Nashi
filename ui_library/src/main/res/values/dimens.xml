@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!--Text style dimens-->
+	<dimen name="style_text_large">18sp</dimen>
+	<dimen name="style_text_medium">16sp</dimen>
+	<dimen name="style_text_small">14sp</dimen>
+
+	<!--Avatar style dimens-->
+	<dimen name="style_avatar_large">80dp</dimen>
+	<dimen name="style_avatar_medium">65dp</dimen>
+	<dimen name="style_avatar_small">50dp</dimen>
+	<dimen name="style_avatar_micro">32dp</dimen>
+	
+	<!--Toolbar style-->
+	<dimen name="toolbar_height">56dp</dimen>
+	<dimen name="toolbar_title_size">23dp</dimen>
+	<dimen name="toolbar_divider_margin">16dp</dimen>
+	
+</resources>

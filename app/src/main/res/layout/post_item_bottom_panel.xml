@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="45dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:id="@+id/like_btn">
+
+			<ImageView
+				android:src="@drawable/ic_outline_thumb_up_alt_black_36"
+				android:layout_width="28dp"
+				android:layout_height="28dp"
+				android:id="@+id/like_icon"/>
+
+			<com.levkopo.apps.nashi.widget.DefaultTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:id="@+id/like_counter"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:gravity="center_vertical"
+			android:layout_marginLeft="10dp"
+			android:id="@+id/repost_btn">
+
+			<ImageView
+				android:src="@drawable/ic_outline_reply_black_48"
+				android:layout_width="28dp"
+				android:layout_height="28dp"
+				android:id="@+id/repost_icon"/>
+
+			<com.levkopo.apps.nashi.widget.DefaultTextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:id="@+id/repost_counter"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

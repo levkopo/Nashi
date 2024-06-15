@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!--Theme colors-->
+    <color name="colorPrimary">#ff000000</color>
+	<color name="colorPrimary_dark">#fffafafa</color>
+	<color name="colorAccent">#663399</color>
+	<color name="colorCard_light">#ffffffff</color>
+	<color name="colorCard_dark">#FF181818</color>
+	<color name="dark_background">#ff151515</color>
+	<color name="light_background">#fff0f0f0</color>
+				
+	<!--Def colors-->
+	<color name="white">#ffffffff</color>
+	<color name="white_alpha12">#1FFFFFFF</color>
+	<color name="black">#ff000000</color>
+	<color name="black_alpha12">#1F000000</color>
+	<color name="gray">#FF2A2A2A</color>
+	<color name="light_gray">#FFA5A5A5</color>
+	<color name="green">#66BB6A</color>
+</resources>

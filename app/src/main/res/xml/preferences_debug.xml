@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.preference.Preference
+		android:icon="@drawable/ic_outline_palette_black_36"
+        android:key="themes_store"
+        android:title="@string/themes_store"/>
+	
+	<androidx.preference.Preference
+	    android:key="accounts"
+        android:title="AccountsFragment"/>
+	
+	<androidx.preference.Preference
+	    android:key="tabs"
+        android:title="TabsFragment"/>
+	
+</androidx.preference.PreferenceScreen>
